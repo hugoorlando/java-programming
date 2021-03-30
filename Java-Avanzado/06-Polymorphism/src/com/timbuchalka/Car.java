@@ -1,0 +1,45 @@
+package com.timbuchalka;
+
+public class Car {
+    private boolean engine;
+    private int cylinders;
+    private String name;
+    private int wheels;
+
+    public Car(int cylinders, String name) {
+        this.cylinders = cylinders;
+        this.name = name;
+        this.wheels = 4;
+        this.engine = true;
+    }
+
+    public String starEngine() {
+        return "Car -> startEngine()";
+    }
+
+    public String accelerate() {
+        return "Car -> accelearte()";
+    }
+
+    public String brake() {
+        return "Car -> breake()";
+    }
+
+
+
+    public int getCylinders() {
+        return cylinders;
+    }
+
+    public void setCylinders(int cylinders) {
+        this.cylinders = cylinders;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
